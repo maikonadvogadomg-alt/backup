@@ -1,0 +1,58 @@
+{
+  "name": "codigosnumerados20261018",
+  "version": "1.0.0",
+  "description": "codigos-numerados-2026-10-18 (Backup)",
+  "author": "Maikon",
+  "private": true,
+  "main": "electron/main.cjs",
+  "portaDoPrograma": 10230,
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "com.maikonadvogadomgalt.codigosnumerados20261018.nbackup.pc.nbackup",
+    "productName": "codigos-numerados-2026-10-18 (Backup)",
+    "executableName": "codigos-numerados-2026-10-18-backup-nbackup",
+    "directories": {
+      "output": "release"
+    },
+    "asar": false,
+    "files": [
+      "**/*",
+      "!android/**",
+      "!.github/**",
+      "!release/**",
+      "!node_modules/.cache/**",
+      "!*.zip",
+      "!.sk/**",
+      "!apk.config.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "icons/icon-512.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "codigos-numerados-2026-10-18 (Backup)",
+      "artifactName": "codigos-numerados-2026-10-18-backup-nbackup-Instalar.exe"
+    },
+    "portable": {
+      "artifactName": "codigos-numerados-2026-10-18-backup-nbackup-sem-instalar.exe"
+    }
+  },
+  "dependencies": {
+    "@lobehub/tts": "^6.0.0",
+    "node-edge-tts": "^1.2.11",
+    "python": "^0.0.4",
+    "python-shell": "^5.0.0",
+    "speak-tts": "^2.0.8",
+    "tts": "^0.1.0"
+  }
+}
