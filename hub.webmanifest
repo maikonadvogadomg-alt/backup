@@ -1,8 +1,8 @@
 {
-  "name": "codigos-numerados-2026-10-18",
-  "short_name": "codigos-nume",
+  "name": "Backup",
+  "short_name": "Backup",
   "description": "codigos-numerados-2026-10-18",
-  "id": "./app-codigos-numerados-2026-10-18-hub",
+  "id": "./app-backup-hub",
   "start_url": "./hub.html",
   "scope": "./",
   "display": "standalone",
